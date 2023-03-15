@@ -13,5 +13,6 @@ int main() {
     // %d means an int
     printf("The man was %d years old.", age);
 
+    printf("\n");
     return 0;
 }
