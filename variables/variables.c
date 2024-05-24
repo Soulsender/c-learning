@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int main() {
 
-    // strings are arrays of chars
-    char name[] = "John";
-    int age = 38;
+int age = 18;                           // %d
+char name[] = "Soul";                   // %s
+short money = 123123;                   // %d
+unsigned int x = 2796969785;            // %u
+long long int y =7345734753485734583;   // %lld / %llu (depending on signed/unsigned)
+bool z = true;                          // %d (value is 1 or 0)
+float a = 3.14;                         // %f
+double b = 3.123123;                    // %lf
 
-    // %s means a string
-    printf("There was a man named %s.\n", name);
+    printf("I am %s and I am %i\n", name, age);
 
-    // %d means an int
-    printf("The man was %d years old.", age);
-
-    printf("\n");
     return 0;
 }
